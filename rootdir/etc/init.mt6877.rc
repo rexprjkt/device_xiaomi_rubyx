@@ -841,7 +841,7 @@ on boot
     write /sys/block/sda/queue/discard_max_bytes 134217728
 
 # Log levels
-    write /proc/sys/kernel/printk "3 4 1 7"
+    write /proc/sys/kernel/printk "4 4 1 7"
 
 on property:vold.decrypt=trigger_reset_main
     setprop sys.boot_completed 0
