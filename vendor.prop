@@ -154,6 +154,10 @@ ro.vendor.smvr.p2batch.vga=16
 # DRM
 ro.netflix.bsp_rev=MTK6877-33678-1
 
+# Fingerprint
+persist.vendor.fingerprint.type=side
+persist.vendor.fingerprint.sensor_location=1080|960|200
+
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
