@@ -164,6 +164,9 @@ persist.vendor.fingerprint.sensor_location=1080|960|200|local:462703942230018764
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
+# Games
+debug.graphics.game_default_frame_rate.disabled=true
+
 # Gatekeeper
 ro.hardware.gatekeeper=beanpod
 
