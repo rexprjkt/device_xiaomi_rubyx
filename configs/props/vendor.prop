@@ -166,6 +166,9 @@ ro.netflix.bsp_rev=MTK6877-33678-1
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
+# Games
+debug.graphics.game_default_frame_rate.disabled=true
+
 # Gatekeeper
 ro.hardware.gatekeeper=beanpod
 
