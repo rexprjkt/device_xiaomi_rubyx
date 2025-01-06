@@ -34,6 +34,7 @@ on init
     
     # update cpus for cpuset cgroup
     write /dev/cpuset/foreground/cpus 0-2,4-7
+    write /dev/cpuset/foreground_window/cpus 0-6
     write /dev/cpuset/foreground/boost/cpus 0-7
     write /dev/cpuset/background/cpus 0-2
     write /dev/cpuset/system-background/cpus 0-3
@@ -71,6 +72,12 @@ on enable-low-power
     write /sys/kernel/ged/hal/dvfs_margin_value 130
     write /sys/kernel/ged/hal/timer_base_dvfs_margin 798
     write /sys/kernel/ged/hal/loading_base_dvfs_step 4
+
+    # Foreground window tasks
+    write /dev/cpuctl/foreground_window/cpu.uclamp.latency_sensitive 0
+    write /dev/cpuctl/foreground_window/cpu.uclamp.min 10
+    write /dev/cpuctl/foreground_window/cpu.uclamp.max max
+    write /dev/cpuctl/foreground_window/cpu.shares 20480
 
     # Configure clamps for standard task groups.
     # system-background
