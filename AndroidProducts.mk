@@ -4,4 +4,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_rubyx.mk
+    $(LOCAL_DIR)/halcyon_rubyx.mk
